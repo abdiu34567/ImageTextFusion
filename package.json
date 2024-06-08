@@ -4,5 +4,16 @@
     "express": "^4.19.2",
     "sharp": "^0.33.4",
     "text-to-image": "^5.2.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "imagetextfusion",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
