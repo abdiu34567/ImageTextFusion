@@ -39,7 +39,7 @@ app.post('/embed-text', async (req, res) => {
             // lineHeight: fontSize,
             // margin: 20,
             bgColor: 'transparent',
-            textColor: '#FFFFFF',  // Using white text
+            textColor: 'black',  // Using white text
             shadowColor: '#000000',  // Adding black shadow
             shadowBlur: 5,  // Shadow blur radius
             shadowOffsetX: 2,  // Horizontal shadow offset
