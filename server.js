@@ -32,7 +32,7 @@ app.post('/embed-text', async (req, res) => {
         // Generate the text image with transparent background and shadow
         console.log('Generating text image...');
         const textImage = await textToImage.generate(text, {
-            // debug: true,
+            debug: false,
             maxWidth: maxWidth,
             fontSize: fontSize,
             fontWeight: "bold",
