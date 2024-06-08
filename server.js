@@ -27,16 +27,16 @@ app.post('/embed-text', async (req, res) => {
 
         // Calculate dynamic dimensions and font size
         const maxWidth = metadata.width * 0.8;  // Text image width should be 80% of base image width
-        const fontSize = Math.min(Math.round(metadata.width / 10), 48);  // Font size proportional to image width
+        // const fontSize = Math.min(Math.round(metadata.width / 10), 48);  // Font size proportional to image width
 
         // Generate the text image with transparent background and shadow
         console.log('Generating text image...');
         const textImage = await textToImage.generate(text, {
             maxWidth: maxWidth,
-            fontSize: fontSize,
+            fontSize: 30,
             fontWeight: "bold",
             fontFamily: 'Arial',
-            lineHeight: fontSize,
+            // lineHeight: fontSize,
             // margin: 20,
             bgColor: 'transparent',
             textColor: '#FFFFFF',  // Using white text
